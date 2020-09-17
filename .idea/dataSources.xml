@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="prod_bb" uuid="9e634381-ca95-4178-8e54-a34c842ce0e4">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1/beautybox_crm</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="bb_crm_local" uuid="1e1bad83-c7fd-467a-9fe4-f5c7ccb1548e">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1:3306/bb_crm_for_bot</jdbc-url>
+    </data-source>
+  </component>
+</project>

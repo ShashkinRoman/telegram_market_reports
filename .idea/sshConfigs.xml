@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="beautybox.ru" id="b5b72b00-cb00-4781-ae7a-df0add0bc14a" port="1022" nameFormat="DESCRIPTIVE" username="marabidis" />
+    </configs>
+  </component>
+</project>
