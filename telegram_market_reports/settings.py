@@ -80,13 +80,22 @@ WSGI_APPLICATION = 'telegram_market_reports.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'bb_crm_for_bot' or os.getenv('db_name'),
-        'USER': 'root' or os.getenv('db_user'),
-        'PASSWORD': os.getenv('test_pass') or os.getenv('db_pass'),
-        'HOST': '127.0.0.1' or os.getenv('db_host'),   # Or an IP Address that your DB is hosted on
-        'PORT': '3306' or os.getenv('db_port')
+        'NAME': os.getenv('db_name'),
+        'USER': os.getenv('db_user'),
+        'PASSWORD': os.getenv('db_pass'),
+        'HOST': os.getenv('db_host'),   # Or an IP Address that your DB is hosted on
+        'PORT': os.getenv('db_port')
         },
 }
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'bb_crm_for_bot' or os.getenv('db_name'),
+#         'USER': 'root' or os.getenv('db_user'),
+#         'PASSWORD': os.getenv('test_pass') or os.getenv('db_pass'),
+#         'HOST': '127.0.0.1' or os.getenv('db_host'),   # Or an IP Address that your DB is hosted on
+#         'PORT': '3306' or os.getenv('db_port')
+#         },
+# }
 
 
 # Password validation

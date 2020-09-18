@@ -1200,15 +1200,15 @@ class Regions(models.Model):
 
 class Reviews(models.Model):
     reviewid = models.AutoField(db_column='reviewID', primary_key=True)  # Field name made lowercase.
-    addressid = models.ForeignKey(Addresses, models.DO_NOTHING, db_column='addressID')  # Field name made lowercase.
-    clientid = models.ForeignKey('Users', models.DO_NOTHING, db_column='clientID')  # Field name made lowercase.
+    addressid = models.ForeignKey(Addresses, models.DO_NOTHING, db_column='addressID', related_name="address_id")  # Field name made lowercase.
+    clientid = models.ForeignKey('Users', models.DO_NOTHING, db_column='clientID', related_name="client_id")  # Field name made lowercase.
     bidid = models.ForeignKey(Bids, models.DO_NOTHING, db_column='bidID', blank=True, null=True)  # Field name made lowercase.
     stars = models.PositiveIntegerField()
     message = models.CharField(max_length=500)
     active = models.PositiveIntegerField()
     created_at = models.DateTimeField(blank=True, null=True)
     updated_at = models.DateTimeField(blank=True, null=True)
-    masterid = models.ForeignKey('Users', models.DO_NOTHING, db_column='masterID', blank=True, null=True)  # Field name made lowercase.
+    masterid = models.ForeignKey('Users', models.DO_NOTHING, db_column='masterID', blank=True, null=True, related_name="master_id")  # Field name made lowercase.
     read = models.PositiveIntegerField()
 
     class Meta:
@@ -1308,7 +1308,7 @@ class SeoCitiesCategories(models.Model):
 
 
 class Sessions(models.Model):
-    id = models.CharField(unique=True, max_length=50, blank=True, null=True)
+    session_id = models.CharField(unique=True, max_length=50, blank=True, null=True)
     user_id = models.IntegerField(blank=True, null=True)
     ip_address = models.CharField(max_length=50, blank=True, null=True)
     user_agent = models.TextField(blank=True, null=True)

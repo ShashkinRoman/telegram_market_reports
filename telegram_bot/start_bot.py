@@ -71,4 +71,9 @@ def handle_message(message):
     bot.reply_to(message, f"{reports_yesterday(date_func()[3])}")
 
 
-bot.polling(timeout=1000)
+def start():
+    bot.polling(timeout=1000)
+
+
+if __name__ == '__main__':
+    start()
