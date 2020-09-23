@@ -93,7 +93,7 @@ def handle_message(message):
     bot.reply_to(message, f"{time} \n"
                           f"{bids} \n"
                           f"{active_users} \n"
-                          f"{[i for i in activ_list]} \n")
+                          f"{activ_list}")
 
 @bot.message_handler(regexp=f"Активные за {get_dates()[1]}")  # today
 def handle_message(message):
@@ -104,7 +104,7 @@ def handle_message(message):
     bot.reply_to(message, f"{time} \n"
                           f"{bids} \n"
                           f"{active_users} \n"
-                          f"{[i for i in activ_list]} \n")
+                          f"{activ_list}")
 
 
 @bot.message_handler(regexp=f"Зарегистрировались за {get_dates()[0]}")  # yesterday

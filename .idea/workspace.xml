@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57478790-6afe-49ff-a3ee-5112ac8701a8" name="Default Changelist" comment="add check active users">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telegram_bot/start_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/telegram_bot/start_bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telegram_bot/texts.py" beforeDir="false" afterPath="$PROJECT_DIR$/telegram_bot/texts.py" afterDir="false" />
-    </list>
+    <list default="true" id="57478790-6afe-49ff-a3ee-5112ac8701a8" name="Default Changelist" comment="add check active users" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +50,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bb_reports" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -104,7 +100,7 @@
       <workItem from="1600666648929" duration="19816000" />
       <workItem from="1600771952821" duration="10676000" />
       <workItem from="1600842585354" duration="2046000" />
-      <workItem from="1600858061521" duration="77000" />
+      <workItem from="1600858061521" duration="498000" />
     </task>
     <task id="LOCAL-00001" summary="add connect to prod bd">
       <created>1600425641716</created>
@@ -120,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600778096427</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add check active users">
+      <created>1600858408709</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600858408709</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,10 +159,10 @@
       <screen x="0" y="32" width="1600" height="868" />
     </state>
     <state x="508" y="264" width="580" height="400" key="#com.intellij.fileTypes.FileTypeChooser/0.32.1600.868@0.32.1600.868" timestamp="1600239029708" />
-    <state x="586" y="172" width="424" height="488" key="FileChooserDialogImpl" timestamp="1600842824535">
+    <state x="586" y="164" width="424" height="488" key="FileChooserDialogImpl" timestamp="1600858821779">
       <screen x="0" y="32" width="1600" height="868" />
     </state>
-    <state x="586" y="172" width="424" height="488" key="FileChooserDialogImpl/0.32.1600.868@0.32.1600.868" timestamp="1600842824535" />
+    <state x="586" y="164" width="424" height="488" key="FileChooserDialogImpl/0.32.1600.868@0.32.1600.868" timestamp="1600858821779" />
     <state x="602" y="362" width="396" height="204" key="Github.ShareDialog" timestamp="1600340110062">
       <screen x="0" y="32" width="1600" height="868" />
     </state>
@@ -172,10 +175,10 @@
       <screen x="0" y="32" width="1600" height="868" />
     </state>
     <state width="265" height="500" key="HiddenNamespacesPopup/0.32.1600.868@0.32.1600.868" timestamp="1600237299825" />
-    <state x="398" y="190" width="800" height="532" key="Vcs.Push.Dialog.v2" timestamp="1600778099290">
+    <state x="398" y="182" width="800" height="532" key="Vcs.Push.Dialog.v2" timestamp="1600858415853">
       <screen x="0" y="32" width="1600" height="868" />
     </state>
-    <state x="398" y="190" width="800" height="532" key="Vcs.Push.Dialog.v2/0.32.1600.868@0.32.1600.868" timestamp="1600778099290" />
+    <state x="398" y="182" width="800" height="532" key="Vcs.Push.Dialog.v2/0.32.1600.868@0.32.1600.868" timestamp="1600858415853" />
     <state x="386" y="120" width="824" height="688" key="com.intellij.database.dbimport.ImportDialog" timestamp="1600249111444">
       <screen x="0" y="32" width="1600" height="868" />
     </state>
