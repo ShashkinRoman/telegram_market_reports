@@ -8,7 +8,7 @@ from telegram_bot.texts import reports_yesterday, reports_registration_bb, repor
 load_dotenv()
 
 
-token = os.getenv('secret_token')
+token = os.getenv('secret_token_test')
 bot = telebot.TeleBot(token)
 
 
@@ -89,16 +89,22 @@ def beauty_box_reports(message):
 def handle_message(message):
     markup = types.ReplyKeyboardMarkup()
     itembtn1 = types.KeyboardButton('На главную')
-    markup.add(itembtn1)
-    bot.reply_to(message, f"{reports_active_users(get_dates()[2], get_dates()[2])}")  # yesterday, yesterday
-
+    time, bids, active_users, activ_list = reports_active_users(get_dates()[2], get_dates()[2])  # today, today
+    bot.reply_to(message, f"{time} \n"
+                          f"{bids} \n"
+                          f"{active_users} \n"
+                          f"{[i for i in activ_list]} \n")
 
 @bot.message_handler(regexp=f"Активные за {get_dates()[1]}")  # today
 def handle_message(message):
     markup = types.ReplyKeyboardMarkup()
     itembtn1 = types.KeyboardButton('На главную')
     markup.add(itembtn1)
-    bot.reply_to(message, f"{reports_active_users(get_dates()[3], get_dates()[3])}")  # today, today
+    time, bids, active_users, activ_list = reports_active_users(get_dates()[3], get_dates()[3])  # today, today
+    bot.reply_to(message, f"{time} \n"
+                          f"{bids} \n"
+                          f"{active_users} \n"
+                          f"{[i for i in activ_list]} \n")
 
 
 @bot.message_handler(regexp=f"Зарегистрировались за {get_dates()[0]}")  # yesterday
@@ -134,7 +140,10 @@ def handle_message(message):
 
 
 def start():
-    bot.polling(timeout=1000)
+    try:
+        bot.polling(timeout=1000)
+    except Exception as e:
+        print(e)
 
 
 if __name__ == '__main__':

@@ -26,7 +26,7 @@ def reports_active_users(start_date, end_date):
     for user in active_users:
         if user.get('bids') > 1:
             correct_return.append((user.get('user_id'),user.get('name'), user.get('bids')))
-    return f"За период {start_date}/{end_date}: " \
-           f"Создано заявок {count_bids}. " \
-           f"Пользователей создавали заявки {len(active_users)}. " \
-           f"Больше 1 заявки у {[i for i in correct_return]}"
+    return f"За период {start_date}/{end_date}: ", \
+           f"Создано заявок {count_bids}. ",\
+           f"Пользователей создавали заявки {len(active_users)}. ",\
+           [f"{i}" for i in correct_return]

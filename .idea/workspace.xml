@@ -19,14 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57478790-6afe-49ff-a3ee-5112ac8701a8" name="Default Changelist" comment="add connect to prod bd">
-      <change afterPath="$PROJECT_DIR$/telegram_bot/utils/utils_bb.py" afterDir="false" />
+    <list default="true" id="57478790-6afe-49ff-a3ee-5112ac8701a8" name="Default Changelist" comment="add check active users">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/telegram_bot/start_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/telegram_bot/start_bot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/telegram_bot/texts.py" beforeDir="false" afterPath="$PROJECT_DIR$/telegram_bot/texts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telegram_bot/utils/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/telegram_bot/utils/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telegram_market_reports/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/telegram_market_reports/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +102,9 @@
       <workItem from="1600415290151" duration="2668000" />
       <workItem from="1600425547422" duration="4454000" />
       <workItem from="1600666648929" duration="19816000" />
-      <workItem from="1600771952821" duration="6008000" />
+      <workItem from="1600771952821" duration="10676000" />
+      <workItem from="1600842585354" duration="2046000" />
+      <workItem from="1600858061521" duration="77000" />
     </task>
     <task id="LOCAL-00001" summary="add connect to prod bd">
       <created>1600425641716</created>
@@ -115,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600425641716</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add check active users">
+      <created>1600778096427</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600778096427</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +140,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add connect to prod bd" />
-    <option name="LAST_COMMIT_MESSAGE" value="add connect to prod bd" />
+    <MESSAGE value="add check active users" />
+    <option name="LAST_COMMIT_MESSAGE" value="add check active users" />
   </component>
   <component name="WindowStateProjectService">
     <state x="380" y="40" width="832" height="708" key="#SSH_Configurations" timestamp="1600241553042">
@@ -150,10 +156,10 @@
       <screen x="0" y="32" width="1600" height="868" />
     </state>
     <state x="508" y="264" width="580" height="400" key="#com.intellij.fileTypes.FileTypeChooser/0.32.1600.868@0.32.1600.868" timestamp="1600239029708" />
-    <state x="586" y="180" width="424" height="488" key="FileChooserDialogImpl" timestamp="1600695248344">
+    <state x="586" y="172" width="424" height="488" key="FileChooserDialogImpl" timestamp="1600842824535">
       <screen x="0" y="32" width="1600" height="868" />
     </state>
-    <state x="586" y="180" width="424" height="488" key="FileChooserDialogImpl/0.32.1600.868@0.32.1600.868" timestamp="1600695248344" />
+    <state x="586" y="172" width="424" height="488" key="FileChooserDialogImpl/0.32.1600.868@0.32.1600.868" timestamp="1600842824535" />
     <state x="602" y="362" width="396" height="204" key="Github.ShareDialog" timestamp="1600340110062">
       <screen x="0" y="32" width="1600" height="868" />
     </state>
@@ -166,17 +172,17 @@
       <screen x="0" y="32" width="1600" height="868" />
     </state>
     <state width="265" height="500" key="HiddenNamespacesPopup/0.32.1600.868@0.32.1600.868" timestamp="1600237299825" />
-    <state x="398" y="198" width="800" height="532" key="Vcs.Push.Dialog.v2" timestamp="1600425644760">
+    <state x="398" y="190" width="800" height="532" key="Vcs.Push.Dialog.v2" timestamp="1600778099290">
       <screen x="0" y="32" width="1600" height="868" />
     </state>
-    <state x="398" y="198" width="800" height="532" key="Vcs.Push.Dialog.v2/0.32.1600.868@0.32.1600.868" timestamp="1600425644760" />
+    <state x="398" y="190" width="800" height="532" key="Vcs.Push.Dialog.v2/0.32.1600.868@0.32.1600.868" timestamp="1600778099290" />
     <state x="386" y="120" width="824" height="688" key="com.intellij.database.dbimport.ImportDialog" timestamp="1600249111444">
       <screen x="0" y="32" width="1600" height="868" />
     </state>
     <state x="386" y="120" width="824" height="688" key="com.intellij.database.dbimport.ImportDialog/0.32.1600.868@0.32.1600.868" timestamp="1600249111444" />
-    <state x="413" y="47" width="762" height="746" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600772996717">
+    <state x="413" y="31" width="762" height="746" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600782929470">
       <screen x="0" y="32" width="1600" height="868" />
     </state>
-    <state x="413" y="47" width="762" height="746" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.32.1600.868@0.32.1600.868" timestamp="1600772996717" />
+    <state x="413" y="31" width="762" height="746" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.32.1600.868@0.32.1600.868" timestamp="1600782929470" />
   </component>
 </project>
