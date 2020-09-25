@@ -9,7 +9,7 @@ from telegram_bot.texts import reports_yesterday, reports_registration_bb, repor
 load_dotenv()
 
 
-token = os.getenv('secret_token_test')
+token = os.getenv('secret_token')
 bot = telebot.TeleBot(token)
 
 
@@ -303,10 +303,11 @@ def handle_message(message):
 
 
 def start():
-    try:
-        bot.polling(timeout=1000)
-    except Exception as e:
-        print(e)
+    while True:
+        try:
+            bot.polling(timeout=1000)
+        except Exception as e:
+            print(e)
 
 
 if __name__ == '__main__':

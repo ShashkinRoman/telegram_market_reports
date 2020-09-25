@@ -19,11 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57478790-6afe-49ff-a3ee-5112ac8701a8" name="Default Changelist" comment="add check active users">
-      <change afterPath="$PROJECT_DIR$/telegram_bot/utils/moysclad.py" afterDir="false" />
+    <list default="true" id="57478790-6afe-49ff-a3ee-5112ac8701a8" name="Default Changelist" comment="add info about costs on store">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/telegram_bot/start_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/telegram_bot/start_bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telegram_bot/texts.py" beforeDir="false" afterPath="$PROJECT_DIR$/telegram_bot/texts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telegram_market_reports/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/telegram_market_reports/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +107,7 @@
       <workItem from="1600858061521" duration="498000" />
       <workItem from="1600859403175" duration="2555000" />
       <workItem from="1600939726855" duration="11310000" />
-      <workItem from="1601022637063" duration="1726000" />
+      <workItem from="1601022637063" duration="2358000" />
     </task>
     <task id="LOCAL-00001" summary="add connect to prod bd">
       <created>1600425641716</created>
@@ -152,7 +151,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600859693520</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add info about costs on store">
+      <created>1601024384604</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1601024384604</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add info about costs on store">
+      <created>1601024423205</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1601024423205</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,7 +186,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add connect to prod bd" />
     <MESSAGE value="add check active users" />
-    <option name="LAST_COMMIT_MESSAGE" value="add check active users" />
+    <MESSAGE value="add info about costs on store" />
+    <option name="LAST_COMMIT_MESSAGE" value="add info about costs on store" />
   </component>
   <component name="WindowStateProjectService">
     <state x="380" y="40" width="832" height="708" key="#SSH_Configurations" timestamp="1600241553042">
@@ -204,10 +218,10 @@
       <screen x="0" y="32" width="1600" height="868" />
     </state>
     <state width="265" height="500" key="HiddenNamespacesPopup/0.32.1600.868@0.32.1600.868" timestamp="1600237299825" />
-    <state x="398" y="166" width="800" height="532" key="Vcs.Push.Dialog.v2" timestamp="1600859700303">
+    <state x="398" y="134" width="800" height="532" key="Vcs.Push.Dialog.v2" timestamp="1601024491924">
       <screen x="0" y="32" width="1600" height="868" />
     </state>
-    <state x="398" y="166" width="800" height="532" key="Vcs.Push.Dialog.v2/0.32.1600.868@0.32.1600.868" timestamp="1600859700303" />
+    <state x="398" y="134" width="800" height="532" key="Vcs.Push.Dialog.v2/0.32.1600.868@0.32.1600.868" timestamp="1601024491924" />
     <state width="775" height="441" key="XDebugger.FullValuePopup" timestamp="1600948844063">
       <screen x="0" y="32" width="1600" height="868" />
     </state>
