@@ -4,7 +4,8 @@ import telebot
 from telebot import types
 from dotenv import load_dotenv
 from telegram_bot.utils.utils import get_dates
-from telegram_bot.texts import reports_yesterday, reports_registration_bb, reports_active_users
+from telegram_bot.texts import reports_yesterday, reports_registration_bb, reports_active_users, \
+    reports_moysclad
 load_dotenv()
 
 
@@ -57,12 +58,189 @@ def beauty_box_menu(message):
 
 @bot.message_handler(regexp="Продажи")
 def beautymarket_orders(message):
-    markup = types.ReplyKeyboardMarkup(row_width=1)
-    itembtn1 = types.KeyboardButton(f'Интернет за {get_dates()[0]}')  # yesterday
-    itembtn2 = types.KeyboardButton(f'Интернет за {get_dates()[1]}')
-    itembtn3 = types.KeyboardButton(f'На главную')
-    markup.add(itembtn1, itembtn2, itembtn3)
+    markup = types.ReplyKeyboardMarkup(row_width=2)
+    itembtn1 = types.KeyboardButton(f'Интернет')  # yesterday
+    itembtn2 = types.KeyboardButton(f'Москва')
+    itembtn3 = types.KeyboardButton(f'Саратов')
+    itembtn4 = types.KeyboardButton(f'Балаково')
+    itembtn5 = types.KeyboardButton(f'Продажи')
+    itembtn6 = types.KeyboardButton(f'На главную')
+    markup.add(itembtn1, itembtn2, itembtn3, itembtn4, itembtn5, itembtn6)
     bot.reply_to(message, 'Выберите интересующий отчет', reply_markup=markup)
+
+#
+# @bot.message_handler(regexp="Интернет")
+# def beautymarket_orders(message):
+#     markup = types.ReplyKeyboardMarkup(row_width=1)
+#     itembtn1 = types.KeyboardButton(f'Интернет за {get_dates()[0]}')  # yesterday
+#     itembtn2 = types.KeyboardButton(f'Интернет за {get_dates()[1]}')
+#     itembtn3 = types.KeyboardButton(f'На главную')
+#     markup.add(itembtn1, itembtn2, itembtn3)
+#     bot.reply_to(message, 'Выберите интересующий отчет', reply_markup=markup)
+
+
+# @bot.message_handler(regexp=f"Интернет за {get_dates()[0]}")  # yesterday
+# def handle_message(message):
+#     markup = types.ReplyKeyboardMarkup()
+#     itembtn1 = types.KeyboardButton('На главную')
+#     markup.add(itembtn1)
+#     bot.reply_to(message, f"{reports_yesterday(get_dates()[2])}")
+
+
+# @bot.message_handler(regexp=f"Интернет за {get_dates()[1]}")
+# def handle_message(message):
+#     markup = types.ReplyKeyboardMarkup()
+#     itembtn1 = types.KeyboardButton('На главную')
+#     markup.add(itembtn1)
+#     bot.reply_to(message, f"{reports_yesterday(get_dates()[3])}")
+
+
+@bot.message_handler(regexp="Москва")
+def beautymarket_orders_msc(message):
+    markup = types.ReplyKeyboardMarkup(row_width=1)
+    itembtn1 = types.KeyboardButton(f'Msk {get_dates()[0]}')  # yesterday
+    itembtn2 = types.KeyboardButton(f'Msk {get_dates()[1]}')
+    itembtn3 = types.KeyboardButton(f'Продажи')
+    itembtn4 = types.KeyboardButton(f'На главную')
+    markup.add(itembtn1, itembtn2, itembtn3, itembtn4)
+    bot.reply_to(message, 'Выберите интересующий отчет', reply_markup=markup)
+
+
+@bot.message_handler(regexp="Саратов")
+def beautymarket_orders_msc(message):
+    markup = types.ReplyKeyboardMarkup(row_width=1)
+    itembtn1 = types.KeyboardButton(f'Saratov {get_dates()[0]}')  # yesterday
+    itembtn2 = types.KeyboardButton(f'Saratov {get_dates()[1]}')
+    itembtn3 = types.KeyboardButton(f'Продажи')
+    itembtn4 = types.KeyboardButton(f'На главную')
+    markup.add(itembtn1, itembtn2, itembtn3, itembtn4)
+    bot.reply_to(message, 'Выберите интересующий отчет', reply_markup=markup)
+
+
+@bot.message_handler(regexp=f"Saratov {get_dates()[0]}")  # yesterday
+def handle_message(message):
+    markup = types.ReplyKeyboardMarkup()
+    itembtn1 = types.KeyboardButton('Продажи')
+    itembtn2 = types.KeyboardButton('На главную')
+    markup.add(itembtn1, itembtn2)
+    _, quantity, sum = reports_moysclad(get_dates()[2], get_dates()[2], 'saratov')  # today, today
+    bot.reply_to(message, f"За период {get_dates()[0]}/{get_dates()[0]}: \n"
+                          f"со склада 'Саратов' \n"
+                          f"продаж {quantity} \n"
+                          f"на сумму {sum} тыс.", reply_markup=markup)
+
+
+@bot.message_handler(regexp=f"Saratov {get_dates()[1]}")  # yesterday
+def handle_message(message):
+    markup = types.ReplyKeyboardMarkup()
+    itembtn1 = types.KeyboardButton('Продажи')
+    itembtn2 = types.KeyboardButton('На главную')
+    markup.add(itembtn1, itembtn2)
+    _, quantity, sum = reports_moysclad(get_dates()[3], get_dates()[3], 'saratov')  # today, today
+    bot.reply_to(message, f"За период {get_dates()[1]}/{get_dates()[1]}: \n"
+                          f"со склада 'Саратов' \n"
+                          f"продаж {quantity} \n"
+                          f"на сумму {sum} тыс.", reply_markup=markup)
+
+
+@bot.message_handler(regexp="Интернет")
+def beautymarket_orders_msc(message):
+    markup = types.ReplyKeyboardMarkup(row_width=1)
+    itembtn1 = types.KeyboardButton(f'Internet {get_dates()[0]}')  # yesterday
+    itembtn2 = types.KeyboardButton(f'Internet {get_dates()[1]}')
+    itembtn3 = types.KeyboardButton(f'Продажи')
+    itembtn4 = types.KeyboardButton(f'На главную')
+    markup.add(itembtn1, itembtn2, itembtn3, itembtn4)
+    bot.reply_to(message, 'Выберите интересующий отчет', reply_markup=markup)
+
+
+@bot.message_handler(regexp=f"Internet {get_dates()[0]}")  # yesterday
+def handle_message(message):
+    markup = types.ReplyKeyboardMarkup()
+    itembtn1 = types.KeyboardButton('Продажи')
+    itembtn2 = types.KeyboardButton('На главную')
+    markup.add(itembtn1, itembtn2)
+    _, quantity, sum = reports_moysclad(get_dates()[2], get_dates()[2], 'internet')  # today, today
+    bot.reply_to(message, f"За период {get_dates()[0]}/{get_dates()[0]}: \n"
+                          f"со склада 'Интернет' \n"
+                          f"продаж {quantity} \n"
+                          f"на сумму {sum} тыс.", reply_markup=markup)
+
+
+@bot.message_handler(regexp=f"Internet {get_dates()[1]}")  # yesterday
+def handle_message(message):
+    markup = types.ReplyKeyboardMarkup()
+    itembtn1 = types.KeyboardButton('Продажи')
+    itembtn2 = types.KeyboardButton('На главную')
+    markup.add(itembtn1, itembtn2)
+    _, quantity, sum = reports_moysclad(get_dates()[3], get_dates()[3], 'internet')  # today, today
+    bot.reply_to(message, f"За период {get_dates()[1]}/{get_dates()[1]}: \n"
+                          f"со склада 'Интернет' \n"
+                          f"продаж {quantity} \n"
+                          f"на сумму {sum} тыс.", reply_markup=markup)
+
+
+@bot.message_handler(regexp="Балаково")
+def beautymarket_orders_msc(message):
+    markup = types.ReplyKeyboardMarkup(row_width=1)
+    itembtn1 = types.KeyboardButton(f'Balakovo {get_dates()[0]}')  # yesterday
+    itembtn2 = types.KeyboardButton(f'Balakovo {get_dates()[1]}')
+    itembtn3 = types.KeyboardButton(f'Продажи')
+    itembtn4 = types.KeyboardButton(f'На главную')
+    markup.add(itembtn1, itembtn2, itembtn3, itembtn4)
+    bot.reply_to(message, 'Выберите интересующий отчет', reply_markup=markup)
+
+
+@bot.message_handler(regexp=f"Balakovo {get_dates()[0]}")  # yesterday
+def handle_message(message):
+    markup = types.ReplyKeyboardMarkup()
+    itembtn1 = types.KeyboardButton('Продажи')
+    itembtn2 = types.KeyboardButton('На главную')
+    markup.add(itembtn1, itembtn2)
+    _, quantity, sum = reports_moysclad(get_dates()[2], get_dates()[2], 'green_house')  # today, today
+    bot.reply_to(message, f"За период {get_dates()[0]}/{get_dates()[0]}: \n"
+                          f"со склада 'Балаково' \n"
+                          f"продаж {quantity} \n"
+                          f"на сумму {sum} тыс.", reply_markup=markup)
+
+
+@bot.message_handler(regexp=f"Balakovo {get_dates()[1]}")  # yesterday
+def handle_message(message):
+    markup = types.ReplyKeyboardMarkup()
+    itembtn1 = types.KeyboardButton('Продажи')
+    itembtn2 = types.KeyboardButton('На главную')
+    markup.add(itembtn1, itembtn2)
+    _, quantity, sum = reports_moysclad(get_dates()[3], get_dates()[3], 'green_house')  # today, today
+    bot.reply_to(message, f"За период {get_dates()[1]}/{get_dates()[1]}: \n"
+                          f"со склада 'Балаково' \n"
+                          f"продаж {quantity} \n"
+                          f"на сумму {sum} тыс.", reply_markup=markup)
+
+
+@bot.message_handler(regexp=f"Msk {get_dates()[0]}")  # yesterday
+def handle_message(message):
+    markup = types.ReplyKeyboardMarkup()
+    itembtn1 = types.KeyboardButton('Продажи')
+    itembtn2 = types.KeyboardButton('На главную')
+    markup.add(itembtn1, itembtn2)
+    _, quantity, sum = reports_moysclad(get_dates()[2], get_dates()[2], 'moscow_store')  # today, today
+    bot.reply_to(message, f"За период {get_dates()[0]}/{get_dates()[0]}: \n"
+                          f"со склада 'Москва' \n"
+                          f"продаж {quantity} \n"
+                          f"на сумму {sum} тыс.", reply_markup=markup)
+
+
+@bot.message_handler(regexp=f"Msk {get_dates()[1]}")  # yesterday
+def handle_message(message):
+    markup = types.ReplyKeyboardMarkup()
+    itembtn1 = types.KeyboardButton('Продажи')
+    itembtn2 = types.KeyboardButton('На главную')
+    markup.add(itembtn1, itembtn2)
+    _, quantity, sum = reports_moysclad(get_dates()[3], get_dates()[3], 'moscow_store')  # today, today
+    bot.reply_to(message, f"За период {get_dates()[1]}/{get_dates()[1]}: \n"
+                          f"со склада 'Москва' \n"
+                          f"продаж {quantity} \n"
+                          f"на сумму {sum} тыс.", reply_markup=markup)
 
 
 @bot.message_handler(regexp="Регистрации")
@@ -122,21 +300,6 @@ def handle_message(message):
     markup.add(itembtn1)
     bot.reply_to(message, f"{reports_registration_bb(get_dates()[3], get_dates()[3])}")  # today, today
 
-
-@bot.message_handler(regexp=f"Интернет за {get_dates()[0]}")  # yesterday
-def handle_message(message):
-    markup = types.ReplyKeyboardMarkup()
-    itembtn1 = types.KeyboardButton('На главную')
-    markup.add(itembtn1)
-    bot.reply_to(message, f"{reports_yesterday(get_dates()[2])}")
-
-
-@bot.message_handler(regexp=f"Интернет за {get_dates()[1]}")
-def handle_message(message):
-    markup = types.ReplyKeyboardMarkup()
-    itembtn1 = types.KeyboardButton('На главную')
-    markup.add(itembtn1)
-    bot.reply_to(message, f"{reports_yesterday(get_dates()[3])}")
 
 
 def start():
