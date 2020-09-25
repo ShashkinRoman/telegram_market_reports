@@ -1,5 +1,7 @@
 # https://github.com/eternnoir/pyTelegramBotAPI#more-examples
 import os
+from time import sleep
+from datetime import datetime
 import telebot
 from telebot import types
 from dotenv import load_dotenv
@@ -9,7 +11,7 @@ from telegram_bot.texts import reports_yesterday, reports_registration_bb, repor
 load_dotenv()
 
 
-token = os.getenv('secret_token_test')
+token = os.getenv('secret_token')
 bot = telebot.TeleBot(token)
 
 
@@ -63,9 +65,8 @@ def beautymarket_orders(message):
     itembtn2 = types.KeyboardButton(f'Москва')
     itembtn3 = types.KeyboardButton(f'Саратов')
     itembtn4 = types.KeyboardButton(f'Балаково')
-    itembtn5 = types.KeyboardButton(f'Продажи')
-    itembtn6 = types.KeyboardButton(f'На главную')
-    markup.add(itembtn1, itembtn2, itembtn3, itembtn4, itembtn5, itembtn6)
+    itembtn5 = types.KeyboardButton(f'На главную')
+    markup.add(itembtn1, itembtn2, itembtn3, itembtn4, itembtn5)
     bot.reply_to(message, 'Выберите интересующий отчет', reply_markup=markup)
 
 #
@@ -303,10 +304,13 @@ def handle_message(message):
 
 
 def start():
-    try:
-        bot.polling(timeout=1000)
-    except Exception as e:
-        print(e)
+    while True:
+        try:
+            bot.polling(timeout=1000)
+        except Exception as e:
+            print(datetime.now())
+            print(e)
+            sleep(5)
 
 
 if __name__ == '__main__':
