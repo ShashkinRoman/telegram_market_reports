@@ -311,6 +311,7 @@ def start():
             print(datetime.now())
             print(e)
             sleep(5)
+            bot.polling(timeout=1000)
 
 
 if __name__ == '__main__':
