@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57478790-6afe-49ff-a3ee-5112ac8701a8" name="Default Changelist" comment="add info about costs on store">
-      <change afterPath="$PROJECT_DIR$/reboot_bot.sh" afterDir="false" />
+    <list default="true" id="57478790-6afe-49ff-a3ee-5112ac8701a8" name="Default Changelist" comment="add reboot_bot.sh">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reboot_bot.sh" beforeDir="false" afterPath="$PROJECT_DIR$/reboot_bot.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +107,8 @@
       <workItem from="1600859403175" duration="2555000" />
       <workItem from="1600939726855" duration="11310000" />
       <workItem from="1601022637063" duration="2358000" />
-      <workItem from="1601104483235" duration="816000" />
+      <workItem from="1601104483235" duration="958000" />
+      <workItem from="1601105472379" duration="456000" />
     </task>
     <task id="LOCAL-00001" summary="add connect to prod bd">
       <created>1600425641716</created>
@@ -165,7 +166,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601024423205</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add reboot_bot.sh">
+      <created>1601105426363</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1601105426363</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add reboot_bot.sh">
+      <created>1601105491218</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1601105491218</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,7 +202,8 @@
     <MESSAGE value="add connect to prod bd" />
     <MESSAGE value="add check active users" />
     <MESSAGE value="add info about costs on store" />
-    <option name="LAST_COMMIT_MESSAGE" value="add info about costs on store" />
+    <MESSAGE value="add reboot_bot.sh" />
+    <option name="LAST_COMMIT_MESSAGE" value="add reboot_bot.sh" />
   </component>
   <component name="WindowStateProjectService">
     <state x="380" y="40" width="832" height="708" key="#SSH_Configurations" timestamp="1600241553042">
@@ -218,10 +234,10 @@
       <screen x="0" y="32" width="1600" height="868" />
     </state>
     <state width="265" height="500" key="HiddenNamespacesPopup/0.32.1600.868@0.32.1600.868" timestamp="1600237299825" />
-    <state x="398" y="126" width="800" height="532" key="Vcs.Push.Dialog.v2" timestamp="1601025603684">
+    <state x="398" y="102" width="800" height="532" key="Vcs.Push.Dialog.v2" timestamp="1601105495483">
       <screen x="0" y="32" width="1600" height="868" />
     </state>
-    <state x="398" y="126" width="800" height="532" key="Vcs.Push.Dialog.v2/0.32.1600.868@0.32.1600.868" timestamp="1601025603684" />
+    <state x="398" y="102" width="800" height="532" key="Vcs.Push.Dialog.v2/0.32.1600.868@0.32.1600.868" timestamp="1601105495483" />
     <state width="775" height="441" key="XDebugger.FullValuePopup" timestamp="1600948844063">
       <screen x="0" y="32" width="1600" height="868" />
     </state>
@@ -230,9 +246,9 @@
       <screen x="0" y="32" width="1600" height="868" />
     </state>
     <state x="386" y="120" width="824" height="688" key="com.intellij.database.dbimport.ImportDialog/0.32.1600.868@0.32.1600.868" timestamp="1600249111444" />
-    <state x="413" y="31" width="762" height="746" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600782929470">
+    <state x="413" y="24" width="762" height="746" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1601105926967">
       <screen x="0" y="32" width="1600" height="868" />
     </state>
-    <state x="413" y="31" width="762" height="746" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.32.1600.868@0.32.1600.868" timestamp="1600782929470" />
+    <state x="413" y="24" width="762" height="746" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.32.1600.868@0.32.1600.868" timestamp="1601105926967" />
   </component>
 </project>
