@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57478790-6afe-49ff-a3ee-5112ac8701a8" name="Default Changelist" comment="add info about costs on store">
+      <change afterPath="$PROJECT_DIR$/reboot_bot.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telegram_bot/start_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/telegram_bot/start_bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/telegram_market_reports/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/telegram_market_reports/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +107,7 @@
       <workItem from="1600859403175" duration="2555000" />
       <workItem from="1600939726855" duration="11310000" />
       <workItem from="1601022637063" duration="2358000" />
+      <workItem from="1601104483235" duration="816000" />
     </task>
     <task id="LOCAL-00001" summary="add connect to prod bd">
       <created>1600425641716</created>
@@ -218,10 +218,10 @@
       <screen x="0" y="32" width="1600" height="868" />
     </state>
     <state width="265" height="500" key="HiddenNamespacesPopup/0.32.1600.868@0.32.1600.868" timestamp="1600237299825" />
-    <state x="398" y="134" width="800" height="532" key="Vcs.Push.Dialog.v2" timestamp="1601024491924">
+    <state x="398" y="126" width="800" height="532" key="Vcs.Push.Dialog.v2" timestamp="1601025603684">
       <screen x="0" y="32" width="1600" height="868" />
     </state>
-    <state x="398" y="134" width="800" height="532" key="Vcs.Push.Dialog.v2/0.32.1600.868@0.32.1600.868" timestamp="1601024491924" />
+    <state x="398" y="126" width="800" height="532" key="Vcs.Push.Dialog.v2/0.32.1600.868@0.32.1600.868" timestamp="1601025603684" />
     <state width="775" height="441" key="XDebugger.FullValuePopup" timestamp="1600948844063">
       <screen x="0" y="32" width="1600" height="868" />
     </state>
