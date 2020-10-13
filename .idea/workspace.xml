@@ -19,9 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57478790-6afe-49ff-a3ee-5112ac8701a8" name="Default Changelist" comment="add reboot_bot.sh">
+    <list default="true" id="57478790-6afe-49ff-a3ee-5112ac8701a8" name="Default Changelist" comment="Merge remote-tracking branch 'origin/master'">
+      <change beforePath="$PROJECT_DIR$/.idea/sshConfigs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reboot_bot.sh" beforeDir="false" afterPath="$PROJECT_DIR$/reboot_bot.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telegram_bot/start_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/telegram_bot/start_bot.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +110,16 @@
       <workItem from="1600939726855" duration="11310000" />
       <workItem from="1601022637063" duration="2358000" />
       <workItem from="1601104483235" duration="958000" />
-      <workItem from="1601105472379" duration="456000" />
+      <workItem from="1601105472379" duration="884000" />
+      <workItem from="1601271879699" duration="2054000" />
+      <workItem from="1601287896006" duration="33000" />
+      <workItem from="1601360805708" duration="2627000" />
+      <workItem from="1601899481713" duration="1240000" />
+      <workItem from="1601964830699" duration="787000" />
+      <workItem from="1602159145521" duration="1193000" />
+      <workItem from="1602243112429" duration="97000" />
+      <workItem from="1602507525998" duration="1387000" />
+      <workItem from="1602587961086" duration="1669000" />
     </task>
     <task id="LOCAL-00001" summary="add connect to prod bd">
       <created>1600425641716</created>
@@ -180,7 +191,28 @@
       <option name="project" value="LOCAL" />
       <updated>1601105491218</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Merge remote-tracking branch 'origin/master'">
+      <created>1601106051043</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1601106051043</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Merge remote-tracking branch 'origin/master'">
+      <created>1601106202356</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1601106202356</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Merge remote-tracking branch 'origin/master'">
+      <created>1601106220207</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1601106220207</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,25 +235,26 @@
     <MESSAGE value="add check active users" />
     <MESSAGE value="add info about costs on store" />
     <MESSAGE value="add reboot_bot.sh" />
-    <option name="LAST_COMMIT_MESSAGE" value="add reboot_bot.sh" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="380" y="40" width="832" height="708" key="#SSH_Configurations" timestamp="1600241553042">
+    <state x="380" y="32" width="832" height="708" key="#SSH_Configurations" timestamp="1602159176828">
       <screen x="0" y="32" width="1600" height="868" />
     </state>
-    <state x="380" y="40" width="832" height="708" key="#SSH_Configurations/0.32.1600.868@0.32.1600.868" timestamp="1600241553042" />
-    <state x="398" y="24" width="1072" height="681" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600427313933">
+    <state x="380" y="32" width="832" height="708" key="#SSH_Configurations/0.32.1600.868@0.32.1600.868" timestamp="1602159176828" />
+    <state x="398" y="24" width="1072" height="681" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602159599325">
       <screen x="0" y="32" width="1600" height="868" />
     </state>
-    <state x="398" y="24" width="1072" height="681" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.32.1600.868@0.32.1600.868" timestamp="1600427313933" />
+    <state x="398" y="24" width="1072" height="681" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.32.1600.868@0.32.1600.868" timestamp="1602159599325" />
     <state x="508" y="264" width="580" height="400" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600239029708">
       <screen x="0" y="32" width="1600" height="868" />
     </state>
     <state x="508" y="264" width="580" height="400" key="#com.intellij.fileTypes.FileTypeChooser/0.32.1600.868@0.32.1600.868" timestamp="1600239029708" />
-    <state x="586" y="148" width="424" height="488" key="FileChooserDialogImpl" timestamp="1600953126503">
+    <state x="586" y="132" width="424" height="488" key="FileChooserDialogImpl" timestamp="1601900887771">
       <screen x="0" y="32" width="1600" height="868" />
     </state>
-    <state x="586" y="148" width="424" height="488" key="FileChooserDialogImpl/0.32.1600.868@0.32.1600.868" timestamp="1600953126503" />
+    <state x="586" y="132" width="424" height="488" key="FileChooserDialogImpl/0.32.1600.868@0.32.1600.868" timestamp="1601900887771" />
     <state x="602" y="362" width="396" height="204" key="Github.ShareDialog" timestamp="1600340110062">
       <screen x="0" y="32" width="1600" height="868" />
     </state>
@@ -234,10 +267,10 @@
       <screen x="0" y="32" width="1600" height="868" />
     </state>
     <state width="265" height="500" key="HiddenNamespacesPopup/0.32.1600.868@0.32.1600.868" timestamp="1600237299825" />
-    <state x="398" y="102" width="800" height="532" key="Vcs.Push.Dialog.v2" timestamp="1601105495483">
+    <state x="398" y="70" width="800" height="532" key="Vcs.Push.Dialog.v2" timestamp="1601106224950">
       <screen x="0" y="32" width="1600" height="868" />
     </state>
-    <state x="398" y="102" width="800" height="532" key="Vcs.Push.Dialog.v2/0.32.1600.868@0.32.1600.868" timestamp="1601105495483" />
+    <state x="398" y="70" width="800" height="532" key="Vcs.Push.Dialog.v2/0.32.1600.868@0.32.1600.868" timestamp="1601106224950" />
     <state width="775" height="441" key="XDebugger.FullValuePopup" timestamp="1600948844063">
       <screen x="0" y="32" width="1600" height="868" />
     </state>

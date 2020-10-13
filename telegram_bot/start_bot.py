@@ -2,16 +2,19 @@
 import os
 from time import sleep
 from datetime import datetime
+from django.db import connection
+import django
 import telebot
 from telebot import types
 from dotenv import load_dotenv
 from telegram_bot.utils.utils import get_dates
 from telegram_bot.texts import reports_yesterday, reports_registration_bb, reports_active_users, \
     reports_moysclad
+from django.db.utils import OperationalError
 load_dotenv()
 
 
-token = os.getenv('secret_token')
+token = os.getenv('secret_token_test')
 bot = telebot.TeleBot(token)
 
 
@@ -302,11 +305,20 @@ def handle_message(message):
     bot.reply_to(message, f"{reports_registration_bb(get_dates()[3], get_dates()[3])}")  # today, today
 
 
-
 def start():
     while True:
         try:
             bot.polling(timeout=1000)
+        except OperationalError:
+            db_conn = None
+            while not db_conn:
+                try:
+                    connection.ensure_connection()
+                    db_conn = True
+                except OperationalError:
+                    print('Database unavailable, waiting 1 second...')
+                    sleep(5)
+            print('Database available!')
         except Exception as e:
             print(datetime.now())
             print(e)
