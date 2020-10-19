@@ -19,8 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57478790-6afe-49ff-a3ee-5112ac8701a8" name="Default Changelist" comment="Merge remote-tracking branch 'origin/master'">
-      <change beforePath="$PROJECT_DIR$/.idea/sshConfigs.xml" beforeDir="false" />
+    <list default="true" id="57478790-6afe-49ff-a3ee-5112ac8701a8" name="Default Changelist" comment="add reconnect in db">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reboot_bot.sh" beforeDir="false" afterPath="$PROJECT_DIR$/reboot_bot.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/telegram_bot/start_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/telegram_bot/start_bot.py" afterDir="false" />
@@ -119,7 +118,10 @@
       <workItem from="1602159145521" duration="1193000" />
       <workItem from="1602243112429" duration="97000" />
       <workItem from="1602507525998" duration="1387000" />
-      <workItem from="1602587961086" duration="1669000" />
+      <workItem from="1602587961086" duration="4337000" />
+      <workItem from="1602659692076" duration="2113000" />
+      <workItem from="1603101197320" duration="1231000" />
+      <workItem from="1603113126478" duration="2572000" />
     </task>
     <task id="LOCAL-00001" summary="add connect to prod bd">
       <created>1600425641716</created>
@@ -212,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601106220207</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add reconnect in db">
+      <created>1602590484541</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1602590484541</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +245,8 @@
     <MESSAGE value="add info about costs on store" />
     <MESSAGE value="add reboot_bot.sh" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'" />
+    <MESSAGE value="add reconnect in db" />
+    <option name="LAST_COMMIT_MESSAGE" value="add reconnect in db" />
   </component>
   <component name="WindowStateProjectService">
     <state x="380" y="32" width="832" height="708" key="#SSH_Configurations" timestamp="1602159176828">
@@ -251,10 +261,10 @@
       <screen x="0" y="32" width="1600" height="868" />
     </state>
     <state x="508" y="264" width="580" height="400" key="#com.intellij.fileTypes.FileTypeChooser/0.32.1600.868@0.32.1600.868" timestamp="1600239029708" />
-    <state x="586" y="132" width="424" height="488" key="FileChooserDialogImpl" timestamp="1601900887771">
+    <state x="586" y="116" width="424" height="488" key="FileChooserDialogImpl" timestamp="1602666724786">
       <screen x="0" y="32" width="1600" height="868" />
     </state>
-    <state x="586" y="132" width="424" height="488" key="FileChooserDialogImpl/0.32.1600.868@0.32.1600.868" timestamp="1601900887771" />
+    <state x="586" y="116" width="424" height="488" key="FileChooserDialogImpl/0.32.1600.868@0.32.1600.868" timestamp="1602666724786" />
     <state x="602" y="362" width="396" height="204" key="Github.ShareDialog" timestamp="1600340110062">
       <screen x="0" y="32" width="1600" height="868" />
     </state>
@@ -267,10 +277,10 @@
       <screen x="0" y="32" width="1600" height="868" />
     </state>
     <state width="265" height="500" key="HiddenNamespacesPopup/0.32.1600.868@0.32.1600.868" timestamp="1600237299825" />
-    <state x="398" y="70" width="800" height="532" key="Vcs.Push.Dialog.v2" timestamp="1601106224950">
+    <state x="398" y="38" width="800" height="532" key="Vcs.Push.Dialog.v2" timestamp="1603114181629">
       <screen x="0" y="32" width="1600" height="868" />
     </state>
-    <state x="398" y="70" width="800" height="532" key="Vcs.Push.Dialog.v2/0.32.1600.868@0.32.1600.868" timestamp="1601106224950" />
+    <state x="398" y="38" width="800" height="532" key="Vcs.Push.Dialog.v2/0.32.1600.868@0.32.1600.868" timestamp="1603114181629" />
     <state width="775" height="441" key="XDebugger.FullValuePopup" timestamp="1600948844063">
       <screen x="0" y="32" width="1600" height="868" />
     </state>
